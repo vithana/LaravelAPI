@@ -36,10 +36,8 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        $student = new Student();
-        $student -> name = $request-> name;
-        $student -> course = $request-> course;
-        $student -> save();
+        $student = $request -> all();
+        Student::create($student);
 
         return response() -> json ([
             $student,
