@@ -24,3 +24,8 @@ Route::get('student/{id}', 'App\Http\Controllers\StudentController@edit');
 Route::put('student/{id}', 'App\Http\Controllers\StudentController@update');
 Route::delete('student/{id}', 'App\Http\Controllers\StudentController@destroy');
 
+/*Route::get('students', 'App\Http\Controllers\StudentController@index');
+Route::post('student/store','App\Http\Controllers\StudentController@store');
+Route::get('student/{id}', 'App\Http\Controllers\StudentController@edit');
+Route::put('student/{id}', 'App\Http\Controllers\StudentController@update');
+Route::delete('student/{id}', 'App\Http\Controllers\StudentController@destroy');*/
